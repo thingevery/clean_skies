@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  album_name: MyString
+  album_description: MyString
+  date_created: 2012-10-13
+  user_id: 1
+
+two:
+  album_name: MyString
+  album_description: MyString
+  date_created: 2012-10-13
+  user_id: 1
