@@ -1,13 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  photo_description: MyText
-  date_taken: 2012-10-13
-  album_id: 1
+photo1:
+  title: photo 1
+  photo_description: CTs
+  date_taken: 2012-10-16
+  album: trailblazer
 
-two:
-  title: MyString
-  photo_description: MyText
-  date_taken: 2012-10-13
-  album_id: 1
+photo2:
+  title: photo 2
+  photo_description: CTs
+  date_taken: 2012-10-16
+  album: trailblazer
+
+photo3:
+  title: photo 3
+  photo_description: CTs
+  date_taken: 2012-10-16
+  album: trailblazer
+
+photo4:
+  title: photo 4
+  photo_description: No trails today.
+  date_taken: 2012-10-20
+  album: cleanskies

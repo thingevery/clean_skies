@@ -1,21 +1,34 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  username: MyString
-  password: MyString
-  nickname: MyString
-  email: MyString
-  profile_pic: MyString
-  description: MyString
-  location: MyString
+august:
+  username: august
+  password: "1234"
+  nickname: August
+  email: admin@cleanskiesfl.com
+  profile_pic: default
+  date_of_birth: 1978-01-20
+  description: "Admin of Clean Skies FL.  Takes pictures of chemtrails."
+  location: Daytona
   date_joined: 2012-10-13
 
-two:
-  username: MyString
-  password: MyString
-  nickname: MyString
-  email: MyString
-  profile_pic: MyString
-  description: MyString
-  location: MyString
-  date_joined: 2012-10-13
+luke:
+  username: LukeSkywatcher
+  password: "1234"
+  nickname: Luke
+  email: luke@skywatcher.com
+  profile_pic: default
+  date_of_birth: 1975-06-01
+  description: "Avid photographer of airborn toxins."
+  location: Florida
+  date_joined: 2012-10-22
+
+cointelpro:
+  username: AgentRed
+  password: "1234"
+  nickname: Agent Red
+  email: AgentRed@fbi.gov
+  profile_pic: default
+  date_of_birth: 1985-07-04
+  description: "Undercover spy for bioengineering corporations here to troll the forum and bury insightful comments."
+  location: Underground
+  date_joined: 2012-10-22

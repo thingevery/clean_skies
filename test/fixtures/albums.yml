@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  album_name: MyString
-  album_description: MyString
-  date_created: 2012-10-13
-  user_id: 1
+trailblazer:
+  album_name: Trail Blazer
+  album_description: These are photos of planes laying chemtrails.
+  date_created: 2012-10-22
+  user: august
 
-two:
-  album_name: MyString
-  album_description: MyString
-  date_created: 2012-10-13
-  user_id: 1
+cleanskies:
+  album_name: Clean Skies
+  album_description: These are photos of the sky when no chemtrails are present.
+  date_created: 2012-10-22
+  user: luke

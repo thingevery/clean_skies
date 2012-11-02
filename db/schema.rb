@@ -37,11 +37,12 @@ ActiveRecord::Schema.define(:version => 20121013053829) do
     t.string   "nickname"
     t.string   "email"
     t.string   "profile_pic"
+    t.date     "date_of_birth"
     t.text     "description"
     t.string   "location"
     t.date     "date_joined"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end
