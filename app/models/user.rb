@@ -12,6 +12,12 @@ class User < ActiveRecord::Base
   # a user can have many albums
   has_many :albums, :dependent => :destroy
 
+  validates :username, :presence => true
+  validates :password, :presence => true
+  validates :location, :presence => true
+  validates :email, :presence => true
+  validates :date_of_birth, :presence => true
+
   def has_albums?(album)
     self.albums.include?(album)
   end

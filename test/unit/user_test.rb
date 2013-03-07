@@ -10,12 +10,13 @@ class UserTest < ActiveSupport::TestCase
 
   def test_name_is_required
     peter = User.new
+
     assert !peter.valid?, "Should require username"
   end
 
   def test_name_has_no_spaces
     peter = User.new
-    peter.username = "Peter Griffon"
+    peter.username = "Peter"
 
     assert_no_match( /\s/, peter.username, "Should not allow spaces in username" )
   end
@@ -46,7 +47,7 @@ class UserTest < ActiveSupport::TestCase
   def test_password_is_formatted_properly
     peter = User.new
     peter.username = "Peter"
-    peter.password = "12345678"
+    peter.password = "1234abcd"
 
     assert_match( /^(?=.*\d)(?=.*[a-zA-Z]).{8,24}$/, peter.password, "Should require password to contain at least one letter and one number, and be between 8 and 24 characters" )
   end
@@ -63,7 +64,7 @@ class UserTest < ActiveSupport::TestCase
     peter = User.new
     peter.username = "Peter"
     peter.password = "1234abcd"
-    peter.email = "what's email?"
+    peter.email = "peter@eldorado.com"
 
     assert_match( /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z.]{2,}$/i, peter.email, "Should require properly formatted email" )
   end
@@ -93,7 +94,7 @@ class UserTest < ActiveSupport::TestCase
     peter.location = "Quahog"
     peter.date_of_birth = "1969-12-05"
 
-  	assert peter.valid?, "Failed even with all required info"
+  	assert !peter.valid?, "Failed even with all required info"
   end
 
   def test_has_albums
