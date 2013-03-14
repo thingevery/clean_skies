@@ -6,8 +6,12 @@ class User < ActiveRecord::Base
   				  :location, 
   				  :nickname, 
   				  :password, 
+            :password_confirmation,
+            :password_digest,
   				  :profile_pic, 
   				  :username
+
+  has_secure_password
 
   # a user can have many albums
   has_many :albums, :dependent => :destroy
@@ -15,7 +19,7 @@ class User < ActiveRecord::Base
   validates :username, :presence => true
   validates :password, :presence => true
   validates :location, :presence => true
-  validates :email, :presence => true
+  validates :email, :presence => true, :uniqueness => true
   validates :date_of_birth, :presence => true
 
   def has_albums?(album)

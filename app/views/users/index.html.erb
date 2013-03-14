@@ -38,4 +38,13 @@
 
 <br />
 
-<%= link_to 'New User', new_user_path %>
+<div id="user_header">
+    <% if current_user %>
+        Logged in as <span class="bold"><%= current_user.username %></span>.
+        <br />
+        <%= link_to "Log Out", logout_path %>
+    <% else %>
+        <%= link_to "Sign Up", signup_path %> or
+        <%= link_to "Log In", login_path %>
+    <% end %>
+</div>

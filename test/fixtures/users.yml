@@ -3,6 +3,7 @@
 august:
   username: august
   password: "1234"
+  password_digest: MyString
   nickname: August
   email: admin@cleanskiesfl.com
   profile_pic: default
@@ -14,6 +15,7 @@ august:
 luke:
   username: LukeSkywatcher
   password: "1234"
+  password_digest: MyString
   nickname: Luke
   email: luke@skywatcher.com
   profile_pic: default
@@ -25,6 +27,7 @@ luke:
 cointelpro:
   username: AgentRed
   password: "1234"
+  password_digest: MyString
   nickname: Agent Red
   email: AgentRed@fbi.gov
   profile_pic: default
